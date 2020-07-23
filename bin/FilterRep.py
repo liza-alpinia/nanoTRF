@@ -5,7 +5,8 @@ from Bio import SeqIO
 Filtering TR with number of repeats >5 and in second TH file TR monomers for each centroid from louvien clustering table.
 """
 class FilteringLouvTab():
-    def __init__(self,clustering_outTab,outdir,THall):
+    def __init__(self,clustering_outTab,outdir,THall,minAbundancy):
+        self.minAbundancy = minAbundancy:
         self.clustering_outTab=clustering_outTab
         self.filtering_outTab=outdir+'/louv_clust_filtering.tab'
         self.list_Rep=self.createListRep()
