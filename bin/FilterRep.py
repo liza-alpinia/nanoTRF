@@ -1,6 +1,7 @@
 import os
 import argparse
 from Bio import SeqIO
+from collections import defaultdict
 """
 Filtering TR with number of repeats >5 and in second TH file TR monomers for each centroid from louvien clustering table.
 """
@@ -30,7 +31,7 @@ class FilteringLouvTab():
                     if countRep>5:
                 #d4e9d1ee-f7b1-48e7-b8b8-dc7f10aa8435*rep0*368*2.4/0                
                         listFiltRep[seq_id] = numCl
-         dictRep = {i: listFiltRep[i] for i in listFiltRep if cluster_abundancy[listFiltRep[i]] > self.minAbundancy}
+        dictRep = {'*'.join(i.split('*')[0:2]): listFiltRep[i] for i in listFiltRep if cluster_abundancy[listFiltRep[i]] > float(self.minAbundancy)}
         return dictRep
    
     
@@ -47,5 +48,5 @@ class FilteringLouvTab():
                 nClust=list_Rep[reSeq]
                 if reSeq in seq_monomer:
                     for key in seq_monomer[reSeq]:                   
-                        reFSeqMnm = '>{0}/{1}\n{2}\n'.format(key, nClust, seq_monomer[reSeq][key]')              
+                        reFSeqMnm = '>{0}/{1}\n{2}\n'.format(key, nClust, seq_monomer[reSeq][key])              
                         fastaWr.write(reFSeqMnm)                     
