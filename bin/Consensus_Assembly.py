@@ -42,9 +42,9 @@ class ConsAssembly():
             dir_canu.append(path_Dir)
 
 
-    def writeFileCan(self):
+   def writeFileCan(self):
         contigs_list=[]
-        with open(self.consensus,'w') as ConensusFile:
+        with open(self.consensus,'w') as ConsensusFile:
             for dirClust in os.listdir(self.outdir_canu):
                 for fasta in os.listdir(self.outdir_canu+dirClust+'/'):
                     if fasta.endswith('.contigs.fasta'):
@@ -53,9 +53,9 @@ class ConsAssembly():
                         for seq in SeqIO.parse(self.outdir_canu+dirClust+'/'+fasta,'fasta'):                  
                             len_reads= float(seq.description.split(' ')[2].split('=')[-1])
                             if len_reads>len_max:
-                                len_reads==len_max                                                                            
+                                len_max =len_reads                                                                           
                                 seq_id = '>{0}/{1}'.format(seq.description, fasta.split('.contig')[0])
                                 seq_p = '{0}\n{1}\n'.format(seq_id,seq.seq)
-                                name_tig==seq_p
-                        ConensusFile.write(name_tig)
+                                name_tig=seq_p
+                        ConsensusFile.write(name_tig)
  
