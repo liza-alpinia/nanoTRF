@@ -1,3 +1,4 @@
+![nanoTRF](https://github.com/liza_alpinia/blob/master/nanoTRF/nanoTRF.png)
 # nanoTRF
 
 NanoTRF is a tool to search high-copy tandem repeats in 
