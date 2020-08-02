@@ -1,5 +1,5 @@
+<img src="nanoTRF.png" width="350" >
 
-![nanoTRF](nanoTRF.png)
 # nanoTRF
 
 NanoTRF is a tool to search high-copy tandem repeats in 
