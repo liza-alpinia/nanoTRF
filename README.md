@@ -94,6 +94,7 @@ NanoTRF works with FASTA and FASTQ formats.
 NanoTRF generates consensus sequences in FASTA format.
 ## <a name="authors"></a>Authors
 **Ilya Kirov**
+
 **Elizaveta Kolganova**
 
 ## <a name="license"></a>License
