@@ -1,4 +1,4 @@
-<img src="nanoTRF.png" width="350" >
+<img src="nanoTRF.png" width="550" >
 
 # nanoTRF
 
