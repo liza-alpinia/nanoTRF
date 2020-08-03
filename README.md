@@ -50,11 +50,11 @@ It works with Oxford Nanopore Technologies (ONT) sequencing data
 
 **-pTH, --path_TH** - path to the location of TideHunter **(required argument!!!)**
 
-**-CU,--canu**  - path to the location of the Canu **(required argument!!!)**
+**-cu,--canu**  - path to the location of the Canu **(required argument!!!)**
 
-**-bn",--blast**  - path to blastn executabled". ***Default='blastn'***
+**-bn,--blast**  - path to blastn executabled". ***Default='blastn'***
 
-**-mb",--makedb**  - path to makeblastdb executable. ***Default='makeblastdb'***
+**-mb,--makedb**  - path to makeblastdb executable. ***Default='makeblastdb'***
 
 **-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads. ***Default = 0.0001***
                         
@@ -83,11 +83,11 @@ NanoTRF generates consensus sequences in FASTA format.
 
 To generate consensus sequences in FASTA format file (with usage default optional arguments):
 ```
-python3 ./nanoTRF.py test.fasta ./bin/TideHunter ./bin/canu ./test/
+python3 ./nanoTRF.py -r test.fasta -pTH ./bin/TideHunter -cu ./bin/canu ./test/
 ```
 To generate consensus sequences in FASTA format file, change number of theads that will be used and remove all unnecessary files and directories:
 ```
-python3 ./nanoTRF.py test.fasta ./bin/TideHunter ./bin/canu ./test/ -th 30 -del c
+python3 ./nanoTRF.py -r test.fasta -pTH ./bin/TideHunter -cu ./bin/canu ./test/ -th 30 -del c
 ```
 ## <a name="authors"></a>Authors
 **Ilya Kirov**
