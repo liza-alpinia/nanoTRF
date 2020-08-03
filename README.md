@@ -56,6 +56,10 @@ It works with Oxford Nanopore Technologies (ONT) sequencing data
 
 **-mb,--makedb**  - path to makeblastdb executable. ***Default='makeblastdb'***
 
+**-w, --wordsize** - word size for wordfinder algorithm (length of best perfect match). ***Default = 22***
+
+***-ev, --evalue*** -  expectation value (E) threshold for saving hits. ***Default = 2***
+
 **-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads. ***Default = 0.0001***
                         
 **-cons, --consensus_name** - file name with consensus sequences. ***Default='consensus.fasta'***
