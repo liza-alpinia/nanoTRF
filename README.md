@@ -42,19 +42,15 @@ It works with Oxford Nanopore Technologies (ONT) sequencing data
 
 ### <a name="cmd"></a>Command and options
 
-*POSITIONAL ARGUMENTS:*
- 
-**reads** - path to FastQ or Fasta file
-
-**out_directory** - path to work directory for output files where will be saved
-
-**pTH** - path to the location of TideHunter
-
-**CU**  - path to the location of the Canu
-
-*OPTIONAL ARGUMENTS:*
-
 **-h, --help**  - show this help message and exit
+
+**-r,--reads** - path to FastQ or Fasta file **(required argument!!!)**
+
+**-out,--out_directory** - path to work directory for output files where will be saved **(required argument!!!)**
+
+**-pTH, --path_TH** - path to the location of TideHunter **(required argument!!!)**
+
+**-CU,--canu**  - path to the location of the Canu **(required argument!!!)**
 
 **-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads
                         
