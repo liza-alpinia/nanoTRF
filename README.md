@@ -7,13 +7,12 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Getting Started](#getting)
-  
-- [Running nanoTRF](#running)
-  - [Usage](#usage)
+- [Getting Started](#getting) 
 - [Commands and options](#cmd)
 - [Input](#input_output)
 - [Output](#output)
+- [Running nanoTRF](#running)
+  - [Usage](#usage)
 - [Authors](#authors)
 - [License](#license)
 ## <a name="getting"></a>Getting Started
@@ -40,15 +39,6 @@ NanoTRF is
 
 
 It works with Oxford Nanopore Technologies (ONT) sequencing data
-
-### <a name="running"></a>Running nanoTRF
-
-#### <a name="usage"></a>Usage
-
-To generate consensus sequences in FASTA format file (with usage default optional arguments):
-```
-python3 ./nanoTRF.py test.fasta ./bin/TideHunter ./bin/canu ./test/
-```
 
 ### <a name="cmd"></a>Command and options
 
@@ -78,7 +68,8 @@ happens when NanoTRF runs. Default - loging.log
 
 **-mOVe, --min_Overlap** - number of overlapping nucleotides between repeats in one cluster
 
-**-del, --opt_delete** - remove unncessary large files and directories from working directory
+**-del, --opt_delete** - remove unnecessary large files and directories from working directory. Default=**d**(delete files and directories), 
+**c**-save all files and directories
 
 ## <a name="input_output"></a>Input
 NanoTRF works with FASTA and FASTQ formats.
@@ -86,6 +77,18 @@ NanoTRF works with FASTA and FASTQ formats.
 ## <a name="output"></a>Output
 
 NanoTRF generates consensus sequences in FASTA format.
+### <a name="running"></a>Running nanoTRF
+
+#### <a name="usage"></a>Usage
+
+To generate consensus sequences in FASTA format file (with usage default optional arguments):
+```
+python3 ./nanoTRF.py test.fasta ./bin/TideHunter ./bin/canu ./test/
+```
+To generate consensus sequences in FASTA format file, change number of theads that will be used and remove all unnecessary files and directories:
+```
+python3 ./nanoTRF.py test.fasta ./bin/TideHunter ./bin/canu ./test/ -th 30 -del c
+```
 ## <a name="authors"></a>Authors
 **Ilya Kirov**
 
