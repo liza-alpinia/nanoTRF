@@ -52,19 +52,23 @@ It works with Oxford Nanopore Technologies (ONT) sequencing data
 
 **-CU,--canu**  - path to the location of the Canu **(required argument!!!)**
 
-**-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads
-                        
-**-cons, --consensus_name** - file name with consensus sequences, default name - consensus.fasta
+**-bn",--blast**  - path to blastn executabled". ***Default='blastn'***
 
-**-th, --threads**  - number of threads for running Blast
+**-mb",--makedb**  - path to makeblastdb executable. ***Default='makeblastdb'***
+
+**-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads. ***Default = 0.0001***
+                        
+**-cons, --consensus_name** - file name with consensus sequences. ***Default='consensus.fasta'***
+
+**-th, --threads**  - number of threads for running Blast. ***Default = 4***
 
 **-lg, ---log_file**  - this file list analysis parameters, modules and files,contains messages generated 
 on the various stages of the NanoTRF work. It allows tracking events that
-happens when NanoTRF runs. Default - loging.log
+happens when NanoTRF runs. Default - loging.log ***Default = 'loging.log'***
 
-**-mOVe, --min_Overlap** - number of overlapping nucleotides between repeats in one cluster
+**-mOVe, --min_Overlap** - number of overlapping nucleotides between repeats in one cluster. ***Default = 15***
 
-**-del, --opt_delete** - remove unnecessary large files and directories from working directory. Default=**d**(delete files and directories), 
+**-del, --opt_delete** - remove unnecessary large files and directories from working directory. ***Default='d'*** **d**-(delete files and directories), 
 **c**-save all files and directories
 
 ## <a name="input_output"></a>Input
