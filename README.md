@@ -28,8 +28,8 @@ wget https:/https://github.com/Kirovez/nanoTRF/releases/download/v1.0.0/nanoTRF-
 tar -zxvf nanoTRF-v1.0.0.tar.gz && cd TideHunter-v1.0.0
 ```
 - blastn and makeblastdb programs. The paths to these programs can be set via -bn and -mb flags, respectively
-- TideHunter programm. It is recommended to download the [latest release of TideHunter](https://github.com/yangao07/TideHunter/releases).The paths to these programs can be set via **pTH** flags
-- Canu programm. The latest release [can be download here](http://github.com/marbl/canu/releases). The paths to these programs can be set via **CU** flags
+- TideHunter programm. It is recommended to download the [latest release of TideHunter](https://github.com/yangao07/TideHunter/releases).The paths to these programs can be set via **-pTH** flags
+- Canu programm. The latest release [can be download here](http://github.com/marbl/canu/releases). The paths to these programs can be set via **-cu** flags
 - python >= v3.6 python packages to be installed: biopython, networkx (run command: pip install matplotlib biopython networkx)
 
 
