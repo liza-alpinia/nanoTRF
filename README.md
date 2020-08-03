@@ -53,32 +53,33 @@ To generate consensus sequences in FASTA format file:
 ### <a name="cmd"></a>Command and options
 
 *POSITIONAL ARGUMENTS:*
- ```
-reads  - path to FastQ or Fasta file
+ 
+**reads** - path to FastQ or Fasta file
 
-out_directory - path to work directory for output files where will be saved
+**out_directory** - path to work directory for output files where will be saved
 
-pTH - path to the location of TideHunter
+**pTH** - path to the location of TideHunter
 
-CU  - path to the location of the Canu
-```
+**CU**  - path to the location of the Canu
+
 *OPTIONAL ARGUMENTS:*
-```
--h, --help  - show this help message and exit
 
--m,--max_abundancy  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads
+**-h, --help**  - show this help message and exit
+
+**-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads
                         
--cons, --consensus_name - file name with consensus sequences, default name - consensus.fasta
+**-cons, --consensus_name** - file name with consensus sequences, default name - consensus.fasta
 
--th, --threads  - number of threads for running Blast
+**-th, --threads**  - number of threads for running Blast
 
--lg, ---log_file  - this file list analysis parameters, modules and files,contains messages generated on the various stages of the NanoTRF work. It allows tracking events that
+**-lg, ---log_file**  - this file list analysis parameters, modules and files,contains messages generated 
+on the various stages of the NanoTRF work. It allows tracking events that
 happens when NanoTRF runs. Default - loging.log
 
--mOVe, --min_Overlap - number of overlapping nucleotides between repeats in one cluster
+**-mOVe, --min_Overlap** - number of overlapping nucleotides between repeats in one cluster
 
--del, --opt_delete - remove unncessary large files and directories from working directory
-```
+**-del, --opt_delete** - remove unncessary large files and directories from working directory
+
 ## <a name="input_output"></a>Input
 NanoTRF works with FASTA and FASTQ formats.
 
