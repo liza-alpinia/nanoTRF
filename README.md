@@ -45,9 +45,9 @@ It works with Oxford Nanopore Technologies (ONT) sequencing data
 
 #### <a name="usage"></a>Usage
 
-To generate consensus sequences in FASTA format file:
+To generate consensus sequences in FASTA format file (with usage default optional arguments):
 ```
-/nanoTRF.py test.fasta ./canu ./
+python3 ./nanoTRF.py test.fasta ./bin/TideHunter ./bin/canu ./test/
 ```
 
 ### <a name="cmd"></a>Command and options
