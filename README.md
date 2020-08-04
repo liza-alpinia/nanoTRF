@@ -8,7 +8,7 @@
 
 - [Introduction](#introduction)
 - [Getting Started](#getting) 
-  - [Building  nanoTRF from  files](#usage)
+  - [Building  nanoTRF from  source files](#building)
 - [Commands and options](#cmd)
 - [Input](#input_output)
 - [Output](#output)
@@ -17,8 +17,7 @@
 - [Authors](#authors)
 - [License](#license)
 ## <a name="getting"></a>Getting Started
-
-**Building  nanoTRF from  files**
+### <a name="building"></a>Building  nanoTRF from  source files
 
 Download the [latest release](https://github.com/Kirovez/nanoTRF/releases):
 ```
@@ -37,8 +36,7 @@ nanoTRF requires:
 
 ## <a name="introduction"></a>Introduction
 
-NanoTRF is 
-
+NanoTRF is software tool to *de novo* search high-copy tandem repeats which is designed for raw long-read sequnces.
 
 It works with Oxford Nanopore Technologies (ONT) sequencing data
 
