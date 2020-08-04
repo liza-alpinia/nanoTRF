@@ -8,6 +8,7 @@
 
 - [Introduction](#introduction)
 - [Getting Started](#getting) 
+  - [Building  nanoTRF from  files](#usage)
 - [Commands and options](#cmd)
 - [Input](#input_output)
 - [Output](#output)
@@ -17,16 +18,17 @@
 - [License](#license)
 ## <a name="getting"></a>Getting Started
 
-**NanoTRF requires:**
-- nanoTRF programm.
-
 **Building  nanoTRF from  files**
 
 Download the [latest release](https://github.com/Kirovez/nanoTRF/releases):
 ```
 wget https:/https://github.com/Kirovez/nanoTRF/releases/download/v1.0.0/nanoTRF-v1.0.0.tar.gz
 tar -zxvf nanoTRF-v1.0.0.tar.gz && cd TideHunter-v1.0.0
+
 ```
+**Prerequisites**
+nanoTRF requires:
+
 - blastn and makeblastdb programs. The paths to these programs can be set via -bn and -mb flags, respectively
 - TideHunter programm. It is recommended to download the [latest release of TideHunter](https://github.com/yangao07/TideHunter/releases).The paths to these programs can be set via **-pTH** flags
 - Canu programm. The latest release [can be download here](http://github.com/marbl/canu/releases). The paths to these programs can be set via **-cu** flags
