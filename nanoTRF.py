@@ -81,7 +81,7 @@ class nanoTRF():
 
 
         ###Canu###
-        Consensus_Assembly.ConsAssembly(self.canu,self.tableFilt,self.outDirectory,self.log_file,self.min_overlap, self.consensus_name)
+        consensus_out=Consensus_Assembly.ConsAssembly(self.canu,self.tableFilt,self.outDirectory,self.log_file,self.min_overlap, self.consensus_name)
         self.dir_clust=consensus_out.outdir_clust
         self.dir_canu=consensus_out.outdir_canu
         ###Delete directories###
