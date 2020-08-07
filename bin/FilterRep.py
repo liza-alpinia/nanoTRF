@@ -1,3 +1,4 @@
+from bin.helpers.help_functions import getLog
 import os
 import argparse
 from Bio import SeqIO
