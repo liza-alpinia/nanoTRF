@@ -2,6 +2,7 @@ import os
 import argparse
 from Bio import AlignIO
 from Bio import SeqIO
+from bin.helpers.help_functions import getLog
 
 class ConsAssembly():
     def __init__(self,canu,filtering_outTab,outdir,log_file,min_overlap,consensus_name):
