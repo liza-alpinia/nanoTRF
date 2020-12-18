@@ -31,4 +31,3 @@ class TideHunter_run():
                 outFasta.write(seq)
                 cnt += 1
         logging.info("Number of tandem repeats found by TideHunter is: {}".format(cnt))
-
