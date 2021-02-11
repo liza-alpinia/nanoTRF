@@ -199,11 +199,12 @@ class Reclustering():
                
                 sp=seq.id.split('_')                
                 if len(sp)==3:
-                    len_s='monomer_length:{} bp'.format(sp[-2])
-                    abund_cl='cluster_abund:{}%'.format(dict_f[n_cl])
+                    len_s='monomer_length:{}bp'.format(sp[-2])
+                    abund_cl='cluster_abundance:{}%'.format(dict_f[n_cl])
                     nano.write('>clust{0} {1} {2}\n{3}\n'.format(n_cl,len_s,abund_cl,seq.seq))
                     
                 if len(sp)==4:
                     len_s='monomer_length:{}bp'.format(sp[-1])
                     abund_cl='cluster_abund:{}%'.format(dict_f[n_cl])
                     nano.write('>clust{0} {1} {2}\n{3}\n'.format(n_cl,len_s,abund_cl,seq.seq))
+
