@@ -154,7 +154,7 @@ NanoTRF generates TRs consensus sequences in FASTA format which contents informa
 
 clustname          cluster number (for example: clust0)
 monomer_length     length of the TRs sequnce
-cluster_abund      
+cluster_abund      cluster abundancy
 ```
 ## <a name="authors"></a>Authors
 **Ilya Kirov** [kirovez@gmail.com ](kirovez@gmail.com )
