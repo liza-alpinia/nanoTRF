@@ -70,51 +70,53 @@ nanoTRF requires:
 
 
 ## <a name="cmd"></a>Command and options
+```
+-h, --help  - show this help message and exit
 
-**-h, --help**  - show this help message and exit
-**-r,--reads** - path to FastQ or Fasta file **(required argument!!!)**
-
-**-o,--out_directory** - path to work directory for output files where will be saved **(required argument!!!)**
-
-**-cu,--canu**  - path to the location of the Canu **(required argument!!!)**
-
-**-T,--run_th** - path to output files of the TideHunter (if previously TideHunter was running by user): table file with consensus sequnces and fasta file with uniq   tandem repeats
-
-**-w, --wordsize** - word size for wordfinder algorithm (length of best perfect match). ***Default = 22***
-
-**-w_f, "--wordsize_f** - word size for wordfinder algorithm (length of best perfect match) in the Reclusting module ',***Default = 15***
-
-***-ev, --evalue*** -  expectation value (E) threshold for saving hits. ***Default = 2***
-
-**-m,--max_abundancy**  - the proportion of amount lengths all tandem repeats in one cluster to length all the reads. ***Default = 0.0001***
-
-**-cons, --consensus_name** - file name with consensus sequences. ***Default='consensus.fasta'***
+Options:
 
 
-**-th, --threads**  - number of threads for running Blast. ***Default = 4***
 
-**-lg, ---log_file**  - this file list analysis parameters, modules and files,contains messages generated
-on the various stages of the NanoTRF work. It allows tracking events that happens when NanoTRF runs. Default - loging.log ***Default = 'loging.log'***
+Input:
+  -r --reads          STR      path to FastQ or Fasta file (required argument!!!)
+  -T --run_th         STR      path to output files of the TideHunter (if previously TideHunter was running by user): 
+                               table file with consensus sequnces and fasta file with uniq tandem repeats
+Scoring parameters for partial order alignment:
+  -w --wordsize       INT      word size for wordfinder algorithm (length of best perfect match) [22]
+  -w_f --wordsize_f   INT      word size for wordfinder algorithm (length of best perfect match) in 
+                               the Reclusting module [15]
+  -ev --evalue        INT      expectation value (E) threshold for saving hits [2]
+  
+Clustering parameters:
+  -m --max_abundancy  STR      the proportion of amount lengths all tandem repeats in one cluster to length all the reads [0.0001]
+  -mOVe --min_Overlap STR      the number of overlapping nucleotides between repeats in one cluster [10]
+  -ca --perc_abund    STR      minimum value of the TR cluster abundancy. ***Default = 0.009***
 
-**-mOVe, --min_Overlap** - number of overlapping nucleotides between repeats in one cluster. ***Default = 10***
+Path to programm for running nanoTRF:
+  -pTH --path_TH      STR      path to the location of TideHunter [TideHinter]
+  -cu --canu          STR      path to the location of Canu (required argument!!!It's missing in the conda)
+  -trf --TRF_run      STR      path to the location [trf]
+  -b --blast          STR      path to blastn executabled [blastn]
+  -mb --makedb        STR      path to makeblastdb executable [makeblastdb]
+  
+Output:
+  -o --out_directory  STR      path to work directory for output files where will be saved **(required argument!!!)
+  -lg --log_filepath  STR      path to file which list analysis parameters, modules and files,contains messages generated 
+                               in the various stages of the work [loging.log]
+  -nano --nano_trf    STR      fasta file with the TRs consensus sequences [nanoTRF.fasta]
+  -tab --nano_tab     STR      table file with the TRs abundancy [TR_info.tab]
+  
+Сomputational resources:
+  
+  -th, --threads      STR      number of threads for running blast, canu. [4]
 
-**-ca, "--perc_abund** - Minimum value of the TR cluster abundancy. ***Default = 0.009***
+Additional option:
 
-**-d, "--dir_cleanup**  - remove unncessary large files and directories from working directory. ***Default = False (save all directories and files)**
-
-
-Arguments for providing path to program (if nanoTRF is running without conda environment):
+  -d --dir_cleanup    STR      remove unncessary large files and directories from working directory [False]
 
 
-**-pTH, --path_TH** - path to the location of TideHunter
 
-
--trf", "--TRF_run", help="Path to the location of the Tandem Rapeat Finder",default='trf' )
-
-**-b,--blast**  - path to blastn executabled". ***Default='blastn'***
-
-**-mb,--makedb**  - path to makeblastdb executable. ***Default='makeblastdb'***
-
+```
 
 ## <a name="input_output"></a>Input
 NanoTRF works with FASTA and FASTQ formats.
