@@ -81,7 +81,7 @@ Before you start, you need to make sure that all program and packages specified 
 - python >= v3.6 python packages to be installed: biopython, networkx (run command: pip install matplotlib biopython networkx)
 - java
 
-### <a name="usage"></a>Usage
+## <a name="usage"></a>Usage
 
 To generate consensus sequences in FASTA format file (with usage default optional arguments):
 ```
@@ -144,9 +144,9 @@ NanoTRF works with FASTA and FASTQ formats.
 NanoTRF generates consensus sequences in FASTA format.
 
 ## <a name="authors"></a>Authors
-**Ilya Kirov**
+**Ilya Kirov** [kirovez@gmail.com ](kirovez@gmail.com )
 
-**Elizaveta Kolganova**
+**Elizaveta Kolganova** [liza.colg@gmail.com](liza.colg@gmail.com)
 
 ## <a name="license"></a>License
 This project is licensed under the **MIT** License
