@@ -140,6 +140,13 @@ NanoTRF works with FASTA and FASTQ formats.
 
 ## <a name="output"></a>Output
 ### <a name="output"></a>Tabular file
+NanoTRF generates output in tabular format:
+| №   | Column name | Description | 
+|:---:|   :---      | ---        |
+|  1  | Cluster     | Name and cluster number |
+|  2  | TRs length  | Length of the TRs consensus sequence |
+|  3  | Abundance   |  |
+
 
 
 ### <a name="output"></a>Fasta file
