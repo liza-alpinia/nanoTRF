@@ -10,14 +10,12 @@ Download the [latest release](https://github.com/Kirovez/nanoTRF/releases):
 ```
 wget https:/https://github.com/Kirovez/nanoTRF/releases/download/v1.0.0/nanoTRF-v1.0.0.tar.gz
 tar -zxvf nanoTRF-v1.0.0.tar.gz && cd TideHunter-v1.0.0
-
 ```
 Install via conda (recommended):
  ```
  conda env create -f nanoTRF.yml
  conda activate nanoTRF
  (nanoTRF) python3 ./nanoTRF.py -r test.fasta -pTH  -cu ./bin/canu -o./test/
- 
  ```
 or install all programs specified below and run data with special flags to specify the programs path:
 - blastn and makeblastdb programs
@@ -29,8 +27,7 @@ or install all programs specified below and run data with special flags to speci
  conda env create -f nanoTRF.yml
  conda activate nanoTRF
  (nanoTRF) python3 ./nanoTRF.py -r test.fasta -pTH  -cu ./bin/canu -o./test/
- 
- ```
+  ```
  
 
 ## Table of Contents
@@ -71,7 +68,6 @@ If you meet any issue with creating environment, please try the pre-built binary
 ```
 wget https:/https://github.com/Kirovez/nanoTRF/releases/download/v1.0.0/nanoTRF-v1.0.0.tar.gz
 tar -zxvf nanoTRF-v1.0.0.tar.gz && cd TideHunter-v1.0.0
-
 ```
 Before you start, you need to make sure that all program and packages specified below is already installed on your computer. For running nanoTRF  you will need to specify the programs path through special flags:
 
