@@ -147,8 +147,15 @@ NanoTRF works with FASTA and FASTQ formats.
 
 
 ### <a name="output"></a>Fasta file
-NanoTRF generates TRs consensus sequences in FASTA format.
 
+NanoTRF generates TRs consensus sequences in FASTA format which contents information about TRs. The sequence descriptions have the following format:
+```
+>clustname monomer_length cluster_abund
+
+clustname          cluster number (for example: clust0)
+monomer_length     length of the TRs sequnce
+cluster_abund      
+```
 ## <a name="authors"></a>Authors
 **Ilya Kirov** [kirovez@gmail.com ](kirovez@gmail.com )
 
