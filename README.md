@@ -75,7 +75,7 @@ tar -zxvf nanoTRF-v1.0.0.tar.gz && cd TideHunter-v1.0.0
 ```
 Before you start, you need to make sure that all program and packages specified below is already installed on your computer. For running nanoTRF  you will need to specify the programs path through special flags:
 
-- blastn and makeblastdb programs. The paths to these programs can be set via -b and -mb flags, respectively
+- blastn and makeblastdb programs. The paths to these programs can be set via **-b** and **-mb** flags, respectively
 - TideHunter programm. It is recommended to download the [latest release of TideHunter](https://github.com/yangao07/TideHunter/releases).The paths to these programs can be set via **-pTH** flags
 - Canu programm. The latest release [can be download here](http://github.com/marbl/canu/releases). The paths to these programs can be set via **-cu** flags
 - python >= v3.6 python packages to be installed: biopython, networkx (run command: pip install matplotlib biopython networkx)
@@ -90,11 +90,10 @@ python3 ./nanoTRF.py -r test.fasta -pTH  -cu ./bin/canu -o./test/
 To generate consensus sequences in FASTA format file, change number of theads that will be used and remove 
 all unnecessary files and directories (with usage TideHunter files) :
 ```
-python3 ./nanoTRF.py -r test.fasta --cu ./bin/canu -o ./test/ -th 30 -d -T 
+python3 ./nanoTRF.py -r test.fasta --cu ./bin/canu -o ./test/ -th 30 -d -T TH.tab TH.out.fasta
 ```
 ## <a name="cmd"></a>Command and options
 ```
--h, --help  - show this help message and exit
 
 Options:
   General options:
@@ -135,13 +134,20 @@ Options:
 
   Additional option:
     -d --dir_cleanup    STR      remove unncessary large files and directories from working directory [False]
+    
+    
+-h, --help  - show this help message and exit
+
 ```
 ## <a name="input_output"></a>Input
 NanoTRF works with FASTA and FASTQ formats.
 
 ## <a name="output"></a>Output
+### <a name="output"></a>Tabular file
 
-NanoTRF generates consensus sequences in FASTA format.
+
+### <a name="output"></a>Fasta file
+NanoTRF generates TRs consensus sequences in FASTA format.
 
 ## <a name="authors"></a>Authors
 **Ilya Kirov** [kirovez@gmail.com ](kirovez@gmail.com )
