@@ -21,7 +21,8 @@ or install all programs specified below and run data with special flags to speci
 - blastn and makeblastdb programs
 - TideHunter programm
 - Canu programm
-- python >= v3.6 python packages to be installed: biopython, networkx (run command: pip install matplotlib biopython networkx)
+- python >= v3.6 
+- python packages to be installed: biopython, networkx.
 - java
  ```
  conda env create -f nanoTRF.yml
@@ -76,8 +77,7 @@ Before you start, you need to make sure that all program and packages specified 
 - Canu programm. The latest release [can be download here](http://github.com/marbl/canu/releases). The paths to these programs can be set via **-cu** flags
 - java
 - python >= v3.6
-- 
-- python packages to be installed: biopython, networkx To install these packages run the following command
+- python packages to be installed: biopython, networkx. To install these packages run the following command
 ```
  pip install matplotlib biopython networkx python-louvain
 ```
