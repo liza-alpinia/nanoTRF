@@ -176,13 +176,14 @@ cluster_abund      cluster abundancy
 ```
 ## <a name="authors"></a>Authors
 **Elizaveta Kolganova** [liza.colg@gmail.com](liza.colg@gmail.com)
+
 **Ilya Kirov** [kirovez@gmail.com ](kirovez@gmail.com )
 
 ## <a name="ackn"></a>Acknowledgement
 The project was financially supported by Russian Foundation for Basic Research (RFBR project № 17-00-00336)
 
 ## <a name="license"></a>License
-This project is licensed under the **MIT** License
+This project is licensed under the **MIT**[https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt] License
 
 
 
