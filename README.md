@@ -99,7 +99,7 @@ To generate consensus sequences in FASTA format file (with usage default optiona
 python3 ./nanoTRF.py -r test.fasta -pTH  -cu ./bin/canu -o./test/
 ```
 To generate consensus sequences in FASTA format file, change number of theads that will be used and remove 
-all unnecessary files and directories (with usage TideHunter files) :
+all unnecessary files and directories (with usage TideHunter files) using 30 threads:
 ```
 python3 ./nanoTRF.py -r test.fasta --cu ./bin/canu -o ./test/ -th 30 -d -T TH.tab TH.out.fasta
 ```
