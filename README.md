@@ -183,7 +183,7 @@ cluster_abund      cluster abundancy
 The project was financially supported by Russian Foundation for Basic Research (RFBR project № 17-00-00336)
 
 ## <a name="license"></a>License
-This project is licensed under the **MIT**[https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt] License
+This project is licensed under the [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) License
 
 
 
