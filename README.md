@@ -74,8 +74,22 @@ Before you start, you need to make sure that all program and packages specified 
 - blastn and makeblastdb programs. The paths to these programs can be set via **-b** and **-mb** flags, respectively
 - TideHunter programm. It is recommended to download the [latest release of TideHunter](https://github.com/yangao07/TideHunter/releases).The paths to these programs can be set via **-pTH** flags
 - Canu programm. The latest release [can be download here](http://github.com/marbl/canu/releases). The paths to these programs can be set via **-cu** flags
-- python >= v3.6 python packages to be installed: biopython, networkx (run command: pip install matplotlib biopython networkx)
 - java
+- python >= v3.6
+- 
+- python packages to be installed: biopython, networkx To install these packages run the following command
+```
+ pip install matplotlib biopython networkx python-louvain
+```
+or
+```
+pip3 install matplotlib biopython networkx python-louvain
+```
+Important note! If you have community python module installed you need to delete it because it interferes with python-louvain module used by nanoTRF. Use this command to delete community module:
+```
+pip3 uninstall community
+```
+
 
 ## <a name="usage"></a>Usage
 
